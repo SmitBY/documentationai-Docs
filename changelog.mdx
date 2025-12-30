@@ -1,0 +1,112 @@
+---
+title: Changelog
+description: Track the latest updates, improvements, and fixes in Dmitry Denisov's documentation platform.
+---
+
+## Recent Updates
+
+Stay informed about the latest releases in Dmitry Denisov's documentation platform. You receive new features, performance improvements, and critical bug fixes regularly.
+
+<Callout kind="info">
+  Check the [GitHub repository](https://github.com/example/docs) for full commit history and detailed pull requests.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+## New Features
+
+- Added support for custom brand colors, including `#3B82F6` as the default blue theme.
+- Introduced real-time collaboration editing for documentation pages.
+- New search indexing for faster navigation across all docs.
+
+## Improvements
+
+- Enhanced MDX parsing to support 5-8 diverse components per page without errors.
+- Optimized rendering speed by `>30%` for large documentation sites.
+
+## Bug Fixes
+
+- Fixed parsing errors with nested code blocks using 4 backticks.
+- Resolved issues with special character escaping in `{API_KEY}` and `<Component>` tags.
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+## New Features
+
+- Integrated `Update` components for changelog pages with tags like `["feature"]`.
+- Added `ParamField` and `ResponseField` for API reference documentation.
+
+## Bug Fixes
+
+- Corrected heading hierarchy enforcement (always start with H2).
+- Fixed self-closing JSX components that required children.
+
+## Improvements
+
+- Better validation for frontmatter YAML with no blank lines.
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+## Initial Release
+
+- Core MDX documentation engine with 16+ components.
+- Full support for `Steps`, `Tabs`, `CodeGroup`, and more.
+- Built-in escaping for `{`, `}`, `<`, `>` in prose.
+
+## Breaking Changes
+
+- Removed legacy H1 headings; use frontmatter `title` exclusively.
+</Update>
+
+## Upcoming Changes
+
+Explore what's coming next to Dmitry Denisov's documentation platform.
+
+<Columns cols={3}>
+  <Card title="AI-Powered Editing" icon="zap" href="#">
+    Auto-generate MDX pages from natural language prompts.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="#">
+    Track documentation usage and popular sections.
+  </Card>
+  <Card title="Multi-Language Support" icon="globe" href="#">
+    Translate docs into 10+ languages automatically.
+  </Card>
+</Columns>
+
+## How to Upgrade
+
+Follow these steps to update your documentation platform to the latest version.
+
+<Steps>
+  <Step title="Backup" icon="database">
+    Save your current `docs/` directory.
+  </Step>
+  <Step title="Update Package" icon="download">
+    <CodeGroup tabs="npm,yarn">
+````bash
+npm install dmitry-docs@latest
+````
+````bash
+yarn add dmitry-docs@latest
+````
+    </CodeGroup>
+  </Step>
+  <Step title="Rebuild" icon="refresh-cw">
+    Run the build command and deploy.
+  </Step>
+</Steps>
+
+<ExpandableGroup>
+  <Expandable title="Migration Guide for v1.2.0" default-open="true">
+    If you used raw `{variable}` syntax, wrap them in backticks: `{`variable`}`.
+
+    Review your pages for H1 headings and replace with H2.
+  </Expandable>
+  <Expandable title="Contributing to Changelog">
+    Submit pull requests with new `Update` components following the format.
+  </Expandable>
+</ExpandableGroup>
+
+<Callout kind="tip">
+  Subscribe to releases on GitHub to get notified of new versions. Visit [Next Steps](/introduction) for more guides.
+</Callout>

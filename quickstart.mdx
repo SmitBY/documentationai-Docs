@@ -1,0 +1,130 @@
+---
+title: Getting Started with Your Documentation Space
+description: Step-by-step instructions to set up your account and create your first documentation project in minutes.
+---
+
+## Overview
+
+Get up and running with Дмитрий Денисов in just a few minutes. Follow these steps to create your account, set up a new documentation space, import files, and complete the initial checklist. This guide assumes you have a web browser and an email address ready.
+
+<Callout kind="info">
+
+**Prerequisites**
+
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- An email address for account verification
+- Optional: Existing project files (Git repo or ZIP archive)
+
+</Callout>
+
+## Create Your Account
+
+Sign up and log in to access your documentation space.
+
+<Steps>
+  <Step title="Visit Dashboard" icon="monitor">
+    Navigate to `https://dashboard.example.com` and click **Sign Up**.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, name, and a strong password. Accept the terms.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification link from `no-reply@example.com` and click it.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard and sign in with your credentials.
+  </Step>
+</Steps>
+
+## Create a New Documentation Space
+
+Organize your docs in a dedicated space.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    From the dashboard, click **New Space** and enter a name like `My Project Docs`.
+  </Step>
+  <Step title="Configure Basics" icon="settings">
+    Select a template (e.g., "Open Source") and set visibility to public or private.
+  </Step>
+  <Step title="Publish Preview" icon="eye">
+    Click **Create** to generate your space at `https://docs.example.com/my-project-docs`.
+  </Step>
+</Steps>
+
+## Import Existing Project Files
+
+Bring in your Markdown files from GitHub or local storage.
+
+<Tabs>
+  <Tab title="GitHub" icon="github">
+    <Steps>
+      <Step title="Connect Repo">
+        Paste your repo URL like `https://github.com/user/project-docs`.
+      </Step>
+      <Step title="Sync Files">
+        Select the branch (e.g., `main`) and click **Import**. Files sync automatically.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="ZIP Upload" icon="upload">
+    <Steps>
+      <Step title="Prepare ZIP">
+        Zip your `/docs` folder containing `.mdx` files.
+      </Step>
+      <Step title="Upload">
+        Drag and drop the ZIP in the importer. Extract and organize automatically.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Sample Configuration
+
+Customize your space with a `config.yaml` file.
+
+<CodeGroup tabs="YAML,JSON">
+```yaml
+title: "My Project Docs"
+description: "Documentation for awesome project"
+brandColor: "#3B82F6"
+sidebar:
+  - label: "Introduction"
+    href: "/introduction"
+```
+```json
+{
+  "title": "My Project Docs",
+  "description": "Documentation for awesome project",
+  "brandColor": "#3B82F6",
+  "sidebar": [
+    {"label": "Introduction", "href": "/introduction"}
+  ]
+}
+```
+</CodeGroup>
+
+## Initial Setup Checklist
+
+Verify your space is ready.
+
+<Columns cols={2}>
+  <Card title="Essential Checks" icon="check-circle">
+    - Custom domain configured?
+    - Navigation sidebar updated?
+    - First page published?
+  </Card>
+  <Card title="Advanced Tweaks" icon="settings">
+    - API key added for webhooks? Use `{YOUR_API_KEY}`.
+    - Search enabled?
+    - Analytics integrated?
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+
+**Next Steps**
+
+Explore advanced features like custom themes or API integrations. Your space is live—share `https://docs.example.com/my-project-docs`!
+
+</Callout>

@@ -1,0 +1,122 @@
+---
+title: Welcome to Dmitry Denisov's Documentation
+description: An overview of Dmitry Denisov's documentation space, designed for organizing and managing project documentation efficiently.
+---
+
+## Overview
+
+Welcome to Dmitry Denisov's documentation space. You use this platform to organize, manage, and publish all your project documentation in one centralized location. It supports MDX for rich, interactive content and scales with your team's needs.
+
+## Key Features
+
+Dmitry Denisov's documentation offers powerful tools for efficient management.
+
+<Columns cols={3}>
+  <Card title="MDX Support" icon="code">
+    Create interactive docs with components like `<Callout>` and `<Steps>`.
+  </Card>
+  <Card title="Version Control" icon="git-branch">
+    Track changes and maintain history for every page.
+  </Card>
+  <Card title="Search & Navigation" icon="search">
+    Full-text search and intuitive sidebar navigation.
+  </Card>
+  <Card title="Collaboration" icon="users">
+    Real-time editing and comments for team workflows.
+  </Card>
+  <Card title="Custom Themes" icon="palette">
+    Brand your docs with custom colors like `#3B82F6`.
+  </Card>
+</Columns>
+
+<Callout kind="info">
+  All features integrate seamlessly to streamline your documentation workflow.
+</Callout>
+
+## Quick Start
+
+Get up and running in minutes.
+
+<Steps>
+  <Step title="Create Account" icon="user-plus">
+    Sign up at `https://dashboard.example.com` with your email.
+  </Step>
+  <Step title="Set Up Space" icon="settings">
+    Create a new documentation space named "Dmitry Denisov".
+  </Step>
+  <Step title="Add First Page" icon="file-plus">
+    Upload your `introduction.mdx` file or start from a template.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Deploy live docs at `https://docs.example.com`.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Example: Fetch docs API
+  const response = await fetch('https://api.example.com/docs', {
+    headers: { Authorization: `Bearer ${YOUR_API_KEY}` }
+  });
+  const docs = await response.json();
+  console.log(docs);
+  ```
+  ```python
+  # Example: Fetch docs API
+  import requests
+  response = requests.get(
+      'https://api.example.com/docs',
+      headers={'Authorization': f'Bearer {YOUR_API_KEY}'}
+  )
+  docs = response.json()
+  print(docs)
+  ```
+</CodeGroup>
+
+## Quick Navigation
+
+Access essential sections quickly.
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="zap" href="/quickstart">
+    Set up your first project in under 5 minutes.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your docs with API keys and tokens.
+  </Card>
+  <Card title="Configuration" icon="settings" href="/configuration">
+    Customize your documentation space.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated with the latest releases.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Maintain consistency across your docs.
+
+Use the primary brand color `#3B82F6` for accents, buttons, and links. Pair it with neutral grays for readability.
+
+<Tabs>
+  <Tab title="CSS Example" icon="code">
+    ```css
+    :root {
+      --brand-color: #3B82F6;
+    }
+    .button {
+      background-color: var(--brand-color);
+      color: white;
+    }
+    ```
+  </Tab>
+  <Tab title="Usage Tips" icon="info">
+    - Apply to headings and icons.
+    - Ensure WCAG AA contrast ratios.
+    - Avoid overuse for better UX.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Explore the [Quickstart](/quickstart) next to build your first doc page.
+</Callout>
